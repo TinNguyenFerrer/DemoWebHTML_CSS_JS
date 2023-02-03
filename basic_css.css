@@ -1,0 +1,28 @@
+.header-content{
+    display: block;
+    position: relative;
+}
+.nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(180deg, rgba(0, 106, 182, .9), rgba(0, 106, 182, .9));;
+    padding: 20px 0 10px 0;
+    display: block;
+    background-image: url("https://daks2k3a4ib2z.cloudfront.net/579a6cc556ea2dba79c093f5/579a6cc656ea2dba79c09418_work-late");
+}
+.header-content .container{
+    /* max-width: 940px; */
+    position: relative;
+    float: left;
+
+}
+.header-content .container a{
+    
+}
+.section{
+    display: block;
+    background-color: antiquewhite;
+}
