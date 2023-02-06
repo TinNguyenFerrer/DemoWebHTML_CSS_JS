@@ -80,6 +80,18 @@
     display: block;
     float: right;
 }
+.nav_container .menu_button{
+    padding: 18px;
+    background-color: #55acee;
+    display: block;
+    position: relative;
+    float: right;
+}
+@media (max-width:992px) {
+    .nav_menu{
+        display: none;
+    }
+}
 .nav_container{
     display: block;
     margin-left: auto;
