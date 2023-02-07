@@ -193,5 +193,5 @@ function keysObject(obj){
   }
   return Object.keys(obj)
 }
-var rgbColors = [{red: "#FF0000", green: "#00FF00", white: "#FFFFFF"}]
+var rgbColors = {red: "#FF0000", green: "#00FF00", white: "#FFFFFF"}
 console.log(keysObject(rgbColors))
