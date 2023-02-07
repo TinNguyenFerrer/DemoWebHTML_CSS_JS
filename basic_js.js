@@ -35,28 +35,28 @@ function sumArray(arr = []) {
 function averageArray(arr) {
   return sumArray(arr) / arr.length
 }
-var square = squareArray([1, 2, 3, 4, 5])
+let square = squareArray([1, 2, 3, 4, 5])
 console.log(square)
-var sum = sumArray(square)
+let sum = sumArray(square)
 console.log(sum)
-var average = averageArray(square)
+let average = averageArray(square)
 console.log(average)
 
 // Q4 Create a new array using the map function whose each element is equal to the original element plus 4.
-var arr = [1, 2, 3, 4, 5]
-var newArr = arr.map(num => num * num)
+let arr = [1, 2, 3, 4, 5]
+let newArr = arr.map(num => num * num)
 console.log(newArr)
 
 // Q5 From the array of numbers, choose even double even numbers and compute the sum using Array's filter, map and reduce methods.
-var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-var newArr = arr.filter(num => num % 2 === 0)
+arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+newArr = arr.filter(num => num % 2 === 0)
   .map(num => num * num)
   .reduce((total, num) => total + num, 0)
 console.log(newArr)
 
 // Q6 Create a new array whose elements is in uppercase of words present in the original array.
-var fruits = ["Orange", "PotaTo", "BananA", "MangO"]
-var fruitsUppercase = fruits.map(fruit => fruit.toUpperCase())
+let fruits = ["Orange", "PotaTo", "BananA", "MangO"]
+let fruitsUppercase = fruits.map(fruit => fruit.toUpperCase())
 console.log(fruitsUppercase)
 /*Q7 Use the .map() method on the heros array to return a new array.
 + The new array should rename the 'name' key to 'hero'.
@@ -88,7 +88,7 @@ const heros = [
   { name: 'Captain Marvel' },
   { name: 'Silver Surfer' }
 ];
-var newHeros = heros.map((hero, index) => {
+let newHeros = heros.map((hero, index) => {
   return { id: index, hero: hero.name }
 })
 console.log(newHeros)
@@ -97,23 +97,23 @@ console.log(newHeros)
 + An array of numbers divisible by 2 or 5.
 + An array of numbers divisible by 3 and then squared those numbers.
 + The sum of the following: square the numbers divisible by 5.*/
-var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 // array of odd numbers
-var oddNumbers = numbers.filter(num => num % 3 === 0)
+let oddNumbers = numbers.filter(num => num % 3 === 0)
 console.log(oddNumbers)
 // array of numbers divisible by 2 or 5
-var numbersDivisible2Or5 = numbers.filter(num => num % 2 === 0 || num % 5 === 0)
+let numbersDivisible2Or5 = numbers.filter(num => num % 2 === 0 || num % 5 === 0)
 console.log(numbersDivisible2Or5)
 // array of numbers divisible by 3 and then squared those numbers
-var numbersDivisible3AndSquared = numbers.filter(num => num % 3 === 0)
+let numbersDivisible3AndSquared = numbers.filter(num => num % 3 === 0)
   .map(num => num * num)
 console.log(numbersDivisible3AndSquared)
 // sum of the following: square the numbers divisible by 5
-var numbersdivisible5AndSquared = numbers.filter(num => num % 5 === 0)
+let numbersdivisible5AndSquared = numbers.filter(num => num % 5 === 0)
   .map(num => num * num)
 console.log(numbersdivisible5AndSquared)
 
-//===================================Array exercises=========================================
+//===================================Object exercises=========================================
 /*Q1 Write a function called calculateSalesTotals() which returns an array with new two new keys (sale and total).
 The key 'sale' equals the calculated sale price based on the original price and the discount. 
 The key 'total' equals the computed total based on stock, the original price and the discount. 
@@ -150,7 +150,7 @@ const sales = [
   { item: 'Nintendo 64', stock: 2, original: 199.99, discount: 0.65 }
 ];
 const updatedSales = sales.map(sale => {
-  var { discount = 0, original, stock } = sale;
+  let { discount = 0, original, stock } = sale;
   sale.sale = original - discount * original
   sale.total = stock * sale.sale
   return sale
@@ -170,7 +170,7 @@ console.log(goToSecondClass(myClasses))
 /*Q3 Consider the following array:
 let colors = ["white", "blue", "yellow", "black", "red", "green"];
 Using array destructuring assign the first 2 elements to firstColor and secondColor variables and assign the remaining elements to otherColors variable. Display the values of these 3 variables.*/
-var colors = ["white", "blue", "yellow", "black", "red", "green"];
+let colors = ["white", "blue", "yellow", "black", "red", "green"];
 const [firstColor, secondColor, ...otherColors] = colors
 console.log(firstColor)
 console.log(secondColor)
