@@ -1,4 +1,4 @@
-var accounts = [
+let accounts = [
     {
       firstName: "Alex",
       lastName: "Wilson",
